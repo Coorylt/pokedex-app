@@ -1,0 +1,149 @@
+.pokemon-header{
+    color:#FECB26;
+    margin: 2em;
+    text-align: center;
+    font-size: 2em;
+  }
+
+.collection-container {
+    color:white;
+    margin-top: 2rem;
+    font-weight: 600;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.collection-container-active{
+    color:#3d405b;
+    margin-top: 2rem;
+    font-weight: 600;
+    overflow-y: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pokemon-list-container:hover {
+    transform: scale(1.05); /* Augmentez la taille du conteneur au survol */
+  }
+
+.pokemon-name {
+    margin-top: 0.5rem;
+    color: #3d405b;
+  }
+
+.pokemon-list-container{
+    display: flex;
+    cursor:pointer;
+    flex-direction: column;
+    background-color: #f4f1de;
+    margin:1rem;
+    padding: 0 1rem;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-container {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 700px) {
+    .collection-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    /* À partir de 768 pixels de large, affichez 3 colonnes par ligne */
+    .collection-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    /* À partir de 768 pixels de large, affichez 3 colonnes par ligne */
+    .collection-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1030px) {
+    /* À partir de 1024 pixels de large, affichez 5 colonnes par ligne */
+    .collection-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  
+
+.pokemon-list-detailed {
+    background-color: #f4f1de;
+    position: absolute;
+    text-align:center;
+    width: 270px;
+    height: 300px;
+    top:30%;
+    left:41%;
+    border-radius: 12px;
+}
+
+.btn {
+    width: 50%;
+    margin-top: 1.5rem;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+button {
+    cursor: pointer;
+    background-color: white;
+    color:#3d405b;
+    padding:0.5rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    border:none;
+    transition: 200ms ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    color:#3d405b;
+    padding:0.5rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    border:none;}
+
+    .rock {
+        background-color: rgb(148, 81, 81);
+      }
+      .ghost {
+        background-color: rgb(247, 247, 247);
+      }
+      .electric {
+        background-color: rgb(255, 255, 161);
+      }
+      .bug {
+        background-color: #F6D6A7;
+      }
+      .poison {
+        background-color: #e0a7f6;
+      }
+      .normal {
+        background-color: #F4F4F4;
+      }
+      .fairy {
+        background-color: rgba(255, 192, 203, 0.863);
+      }
+      .fire {
+        background-color: #FBE3DF;
+      }
+      .grass {
+        background-color:#E2F9E1;
+      }
+      .water {
+        background-color:#E0F1FD;
+      }
+      
